@@ -149,25 +149,3 @@ Each API route has proper error handling for common issues such as invalid produ
 Validation:
 The API validates inputs like the productId, quantity, and required fields in requests. If any required data is missing or invalid, the API returns a 400 status with an appropriate error message.
 
-Project Structure:
-
-
-/shoppyglobe-api
-│
-├── /models
-│   ├── product.model.js    # Mongoose schema for product
-│   ├── cart.model.js       # Mongoose schema for cart
-│   └── user.model.js       # Mongoose schema for user
-│
-├── /routes
-│   ├── product.routes.js   # API routes for products
-│   ├── cart.routes.js      # API routes for cart
-│   └── auth.routes.js      # API routes for authentication
-│
-├── /middleware
-│   └── auth.middleware.js  # JWT authentication middleware
-│
-├── .env                   # Environment variables (MongoDB URI, JWT secret)
-├── .gitignore             # Git ignore file
-├── server.js              # Express server setup
-└── README.md              # Project documentation
